@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="hover-sound" src="/sounds/1201.mp3" preload="auto"></audio>
+    <audio id="mouse-click" src="/sounds/rclick.mp3" preload="auto"></audio>
+    <button id="switch-gallery-up" class="switch-gallery-button-up button">&uarr;</button>
+    <button id="switch-gallery-down" class="switch-gallery-button-down button">&darr;</button>
+
+    <div id="welcome-screen">
+        <h1 class="h1">Welcome to my Presentation on <abbr class="fields"><u>CS-FIELDS</u></abbr></h1>
+        <p class="p">My name is Abbas Ahmad <abbr class="fields">a.k.a</abbr> AssabTigle</p>
+        <p class="p">And today I will walk you through different fields of <abbr class="fields">Computer Science</abbr></p>
+        <div id="bubble-container">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+
+
+    <div class="image-gallery" id="1st-gallery">
+        <div class="gallery-text">
+            <p>WHY JUST WEB DEVELOPEMENT!?</p>
+            <div class="textBubble"></div>
+            <div class="textBubble"></div>
+            <div class="textBubble"></div>
+            <div class="textBubble"></div>
+            <div class="textBubble"></div>
+            <div class="textBubble"></div>
+        </div>
+        <button class="scroll-button left-button button">Left</button>
+        <div class="scrolling-wrapper">
+            
+            <img src="./img/web development/2.webp" alt="webdev 1" onclick="toggleFullScreen(this)">
+            <img src="./img/web development/3.jpg" alt="Image 3" onclick="toggleFullScreen(this)">
+            <img src="./img/web development/4.png" alt="Image 4" onclick="toggleFullScreen(this)">
+            <img src="./img/web development/1.JPG" alt="webdev 2" onclick="toggleFullScreen(this)">
+            <img src="./img/web development/7.jpg" alt="Image 7" onclick="toggleFullScreen(this)">
+            <img src="./img/web development/8.png" alt="Image 8" onclick="toggleFullScreen(this)">
+            <img src="./img/web development/9.png" alt="Image 7" onclick="toggleFullScreen(this)">            
+            <img src="./img/web development/5.webp" alt="Image 5" onclick="toggleFullScreen(this)">
+            <img src="./img/web development/6.webp" alt="Image 6" onclick="toggleFullScreen(this)">
+        </div>
+        
+        <button class="scroll-button right-button button">Right</button>
+    </div>
+
+
+    <div class="table-container">
+        
+        <table>
+            <thead class="thead">
+                <tr>
+                    <th>Web Development Aspect</th>
+                    <th>Description</th>
+                    <th>Tools</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Front-end Development</td>
+                    <td>Creating the visual and interactive elements of a website.</td>
+                    <td>HTML, CSS, JavaScript, React, Angular, Vue.js</td>
+                </tr>
+                <tr>
+                    <td>Back-end Development</td>
+                    <td>Creating the server-side logic and functionality of a website.</td>
+                    <td>Python, Java, Node.js, PHP, Ruby on Rails</td>
+                </tr>
+                <tr>
+                    <td>Version Control</td>
+                    <td>Tracking and managing changes to code.</td>
+                    <td>Git, GitHub, GitLab</td>
+                </tr>
+                <tr>
+                    <td>Testing and Debugging</td>
+                    <td>Identifying and fixing errors in code</td>
+                    <td>Chrome DevTools, Firefox Developer Tools, Postman</td>
+                </tr>
+                
+            </tbody>
+            
+        </table>
+    </div>
+
+    <div class="image-gallery" id="second-gallery">
+
+        <button class="scroll-button left-button button">Left</button>
+        <div class="scrolling-wrapper">
+            
+            <img src="./img/9.jpg" alt="Image 1" onclick="toggleFullScreen(this)">
+            <img src="./img/10.jpg" alt="Image 2" onclick="toggleFullScreen(this)">
+            <img src="./img/3.jpg" alt="Image 3" onclick="toggleFullScreen(this)">
+            <img src="./img/4.jpg" alt="Image 4" onclick="toggleFullScreen(this)">
+            <img src="./img/5.jpg" alt="Image 5" onclick="toggleFullScreen(this)">
+            <img src="./img/6.jpg" alt="Image 6" onclick="toggleFullScreen(this)">
+            <img src="./img/7.png" alt="Image 7" onclick="toggleFullScreen(this)">
+            <img src="./img/8.jpeg" alt="Image 8" onclick="toggleFullScreen(this)">
+            
+        </div>
+        
+        <button class="scroll-button right-button button">Right</button>
+    </div>
+
+
+    <div class="image-gallery" id="second-gallery">
+
+        <button class="scroll-button left-button button">Left</button>
+        <div class="scrolling-wrapper">
+            
+            <img src="./img/9.jpg" alt="Image 1" onclick="toggleFullScreen(this)">
+            <img src="./img/10.jpg" alt="Image 2" onclick="toggleFullScreen(this)">
+            <img src="./img/3.jpg" alt="Image 3" onclick="toggleFullScreen(this)">
+            <img src="./img/4.jpg" alt="Image 4" onclick="toggleFullScreen(this)">
+            <img src="./img/5.jpg" alt="Image 5" onclick="toggleFullScreen(this)">
+            <img src="./img/6.jpg" alt="Image 6" onclick="toggleFullScreen(this)">
+            <img src="./img/7.png" alt="Image 7" onclick="toggleFullScreen(this)">
+            <img src="./img/8.jpeg" alt="Image 8" onclick="toggleFullScreen(this)">
+            
+        </div>
+        
+        <button class="scroll-button right-button button">Right</button>
+    </div>
+
+    <div class="image-gallery" id="second-gallery">
+
+        <button class="scroll-button left-button button">Left</button>
+        <div class="scrolling-wrapper">
+            
+            <img src="./img/9.jpg" alt="Image 1" onclick="toggleFullScreen(this)">
+            <img src="./img/10.jpg" alt="Image 2" onclick="toggleFullScreen(this)">
+            <img src="./img/3.jpg" alt="Image 3" onclick="toggleFullScreen(this)">
+            <img src="./img/4.jpg" alt="Image 4" onclick="toggleFullScreen(this)">
+            <img src="./img/5.jpg" alt="Image 5" onclick="toggleFullScreen(this)">
+            <img src="./img/6.jpg" alt="Image 6" onclick="toggleFullScreen(this)">
+            <img src="./img/7.png" alt="Image 7" onclick="toggleFullScreen(this)">
+            <img src="./img/8.jpeg" alt="Image 8" onclick="toggleFullScreen(this)">
+            
+        </div>
+        
+        <button class="scroll-button right-button button">Right</button>
+    </div>
+
+    
+    
+
+<script src="./script.js"></script>
+
+
+
+</body>
+</html>
